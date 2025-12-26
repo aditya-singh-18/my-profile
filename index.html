@@ -1,0 +1,616 @@
+<!doctype html>
+<!--
+  Developer Portfolio Template
+  Structure:
+  - <head>: meta, fonts, CSS libraries, custom styles
+  - <nav>: top navbar with icon links
+  - <main>: two columns (left profile sidebar, right content sections)
+  - Sections: Hero, Work, Skills, Projects, Education, Certificates, Contact
+  - <script>: Bootstrap bundle and small enhancements
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer Portfolio Template</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts: Anta and DM Sans for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons set -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom site styles -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Top navigation bar with centered icon links -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home">
+                <i class="bi bi-house-door-fill"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projects">
+                <i class="bi bi-folder-fill"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="bottom" title="About">
+                <i class="bi bi-person-fill"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content area: sticky profile sidebar + content sections -->
+    <main class="container-fluid">
+      <div class="row g-0 g-lg-4">
+        <div class="col-12 col-lg-4">
+          <!-- Left: Profile sidebar (sticks while scrolling on large screens) -->
+          <aside class="position-sticky" style="top: 1rem;">
+            <div class="card bg-dark border-0 shadow-sm overflow-hidden profile-card">
+              <div class="profile-image">
+                <img src="profile.png" alt="Developer portrait" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <div class="card-body-text">
+                  <h1 class="h4 mb-1 text_main">Aditya Singh [Tony] </h1>
+                  <p class="text-secondary mb-3 mt-3">I design and build modern web applications with a focus on performance, accessibility, and delightful UX.</p>
+                  <div class="social-links d-flex gap-3 justify-content-center">
+                    <a href="https://github.com/aditya-singh-18" target="_blank" rel="noopener noreferrer" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aditya-singh-unique-url/" target="_blank" rel="noopener noreferrer" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                      <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/__adii.tyaaa__2/" target="_blank" rel="noopener noreferrer" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="content-stack mt-3">
+            <!-- Hero section: headline, summary, and highlight stats -->
+            <section id="hero" class="mb-5">
+              <h1>JUNIOR SOFTWARE ENGINEER</h1>
+              <p class="lead text-secondary">From idea to launch, I build robust and scalable solutions.
+                I craft seamless frontends and powerful backends using modern stacks.
+                Every project follows best practices for performance, security, and scalability.
+                Turning concepts into production-ready software is what I do best.</p>
+              <!-- Quick highlight stats -->
+              <div class="hero-stats mt-5">
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <div class="stat-item text-center">
+                      <div class="stat-number">+2</div>
+                      <div class="stat-label">YEARS OF</div>
+                      <div class="stat-label">EXPERIENCE</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="stat-item text-center">
+                      <div class="stat-number">+10</div>
+                      <div class="stat-label">PROJECTS</div>
+                      <div class="stat-label">COMPLETED</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="stat-item text-center">
+                      <div class="stat-number">+5</div>
+                      <div class="stat-label">WORLDWIDE</div>
+                      <div class="stat-label">CLIENTS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Work Experience timeline -->
+            <section id="work">
+              <h1>WORK EXPERIENCE</h1>
+              <div class="work-timeline">
+                <div class="work-item">
+                  <div class="work-header">
+                    <div class="work-company">
+                      <h3 class="company-name">Freelancer</h3>
+                      <span class="company-location">Vadodara, GJ</span>
+                    </div>
+                    <div class="work-duration">
+                      <span class="duration">2025 - Present</span>
+                    </div>
+                  </div>
+                  <div class="work-position">
+                    <h4 class="position-title">Software Engineer</h4>
+                    <div class="work-description">
+                      <p>Led development of scalable microservices architecture serving 1M+ users. Implemented CI/CD pipelines reducing deployment time by 60%. Mentored junior developers and established coding standards.</p>
+                      <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-item">
+                  <div class="work-header">
+                    <div class="work-company">
+                      <h3 class="company-name">Project Work</h3>
+                      <span class="company-location">Parul University</span>
+                    </div>
+                    <div class="work-duration">
+                      <span class="duration">2023 - Present</span>
+                    </div>
+                  </div>
+                  <div class="work-position">
+                    <h4 class="position-title">Full Stack Developer</h4>
+                    <div class="work-description">
+                      <p>Built end-to-end web applications from concept to deployment. Developed RESTful APIs and responsive frontend interfaces. Collaborated with cross-functional teams in agile environment.</p>
+                      <div class="tech-stack">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express.js</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Skills by category; progress bars animate on scroll -->
+            <section id="skills">
+              <h1>SKILLS</h1>
+              <div class="skills-container">
+                <div class="skill-category">
+                  <h3 class="category-title">Frontend Development</h3>
+                  <div class="skills-grid">
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">React</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                          </div>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-braces"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                          </div>
+                          <span class="skill-percentage">95%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-palette"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">CSS/SCSS</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="88%"></div>
+                          </div>
+                          <span class="skill-percentage">88%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-layout-text-window"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">TypeScript</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                          </div>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h3 class="category-title">Backend Development</h3>
+                  <div class="skills-grid">
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-server"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="92%"></div>
+                          </div>
+                          <span class="skill-percentage">92%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-database"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">MongoDB</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="87%"></div>
+                          </div>
+                          <span class="skill-percentage">87%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-hdd-stack"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="83%"></div>
+                          </div>
+                          <span class="skill-percentage">83%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-gear"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">Express.js</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="89%"></div>
+                          </div>
+                          <span class="skill-percentage">89%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!--tools and technology section-->
+                <div class="skill-category">
+                  <h3 class="category-title">Tools & Technologies</h3>
+                  <div class="skills-grid">
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-cloud"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">AWS</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                          </div>
+                          <span class="skill-percentage">80%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-git"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">Git</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="94%"></div>
+                          </div>
+                          <span class="skill-percentage">94%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-box"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">Docker</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="76%"></div>
+                          </div>
+                          <span class="skill-percentage">76%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-icon">
+                        <i class="bi bi-diagram-3"></i>
+                      </div>
+                      <div class="skill-info">
+                        <span class="skill-name">Kubernetes</span>
+                        <div class="skill-level">
+                          <div class="skill-bar">
+                            <div class="skill-progress" data-width="72%"></div>
+                          </div>
+                          <span class="skill-percentage">72%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Projects with hover overlays linking to demo/code -->
+            <section id="projects">
+              <h1>PROJECTS</h1>
+              <div class="projects-container">
+                <div class="project-card featured">
+                  <div class="project-image">
+                    <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="#" class="project-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Live Demo">
+                          <i class="bi bi-eye-fill"></i>
+                        </a>
+                        <a href="#" class="project-link" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                          <i class="bi bi-github"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-placeholder">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <div class="project-header">
+                      <h3 class="project-title">E-Commerce Platform</h3>
+                      <span class="project-status">Featured</span>
+                    </div>
+                    <p class="project-description">
+                      Full-stack e-commerce platform with real-time inventory and secure payments.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-badge">React</span>
+                      <span class="tech-badge">Node.js</span>
+                      <span class="tech-badge">MongoDB</span>
+                      <span class="tech-badge">Stripe</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="#" class="project-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Live Demo">
+                          <i class="bi bi-eye-fill"></i>
+                        </a>
+                        <a href="#" class="project-link" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                          <i class="bi bi-github"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-placeholder">
+                      <i class="bi bi-graph-up"></i>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <div class="project-header">
+                      <h3 class="project-title">Analytics Dashboard</h3>
+                      <span class="project-status">Completed</span>
+                    </div>
+                    <p class="project-description">
+                      Interactive data visualization dashboard with real-time charts and reports.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-badge">Vue.js</span>
+                      <span class="tech-badge">D3.js</span>
+                      <span class="tech-badge">Express.js</span>
+                      <span class="tech-badge">PostgreSQL</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="#" class="project-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Live Demo">
+                          <i class="bi bi-eye-fill"></i>
+                        </a>
+                        <a href="#" class="project-link" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                          <i class="bi bi-github"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-placeholder">
+                      <i class="bi bi-phone"></i>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <div class="project-header">
+                      <h3 class="project-title">Task Management App</h3>
+                      <span class="project-status">In Progress</span>
+                    </div>
+                    <p class="project-description">
+                      Collaborative task management with team workspaces and real-time sync.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-badge">React Native</span>
+                      <span class="tech-badge">TypeScript</span>
+                      <span class="tech-badge">GraphQL</span>
+                      <span class="tech-badge">AWS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Education timeline -->
+            <section id="education">
+              <h1>EDUCATION</h1>
+              <div class="education-timeline">
+                <div class="education-item">
+                  <div class="education-header">
+                    <div class="education-institution">
+                      <h3 class="institution-name">Parul University</h3>
+                      <span class="institution-location">San Francisco, CA</span>
+                    </div>
+                    <div class="education-duration">
+                      <span class="duration">2023 - 2027</span>
+                    </div>
+                  </div>
+                  <div class="education-details">
+                    <h4 class="degree-title">Bachelor of Technology in Computer Science and Engineering</h4>
+                  </div>
+                </div>
+                <div class="education-item">
+                  <div class="education-header">
+                    <div class="education-institution">
+                      <h3 class="institution-name">Tech Bootcamp Academy</h3>
+                      <span class="institution-location">Online</span>
+                    </div>
+                    <div class="education-duration">
+                      <span class="duration">2025</span>
+                    </div>
+                  </div>
+                  <div class="education-details">
+                    <h4 class="degree-title">Full Stack Web Development</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Certificates and achievements -->
+            <section id="certificates">
+              <h1>CERTIFICATES</h1>
+              <div class="certificates-grid">
+                <div class="certificate-card">
+                  <div class="certificate-icon">
+                    <i class="bi bi-award-fill"></i>
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">AWS Certified Developer</h3>
+                    <p class="certificate-issuer">Amazon Web Services</p>
+                    <span class="certificate-date">2025</span>
+                  </div>
+                </div>
+                <div class="certificate-card">
+                  <div class="certificate-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">React Professional</h3>
+                    <p class="certificate-issuer">Meta</p>
+                    <span class="certificate-date">2025</span>
+                  </div>
+                </div>
+                <div class="certificate-card">
+                  <div class="certificate-icon">
+                    <i class="bi bi-code-square"></i>
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">JavaScript Algorithms</h3>
+                    <p class="certificate-issuer">freeCodeCamp</p>
+                    <span class="certificate-date">2025</span>
+                  </div>
+                </div>
+                <div class="certificate-card">
+                  <div class="certificate-icon">
+                    <i class="bi bi-database"></i>
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">MongoDB Developer</h3>
+                    <p class="certificate-issuer">MongoDB University</p>
+                    <span class="certificate-date">2025</span>
+                  </div>
+                </div>
+                <div class="certificate-card">
+                  <div class="certificate-icon">
+                    <i class="bi bi-git"></i>
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">Git & GitHub</h3>
+                    <p class="certificate-issuer">GitHub</p>
+                    <span class="certificate-date">2025</span>
+                  </div>
+                </div>
+                <div class="certificate-card">
+                  <div class="certificate-icon">
+                    <i class="bi bi-cloud"></i>
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">Docker Essentials</h3>
+                    <p class="certificate-issuer">Docker Inc.</p>
+                    <span class="certificate-date">2025</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Contact form (no backend submission in this template) -->
+            <section id="contact">
+              <h1>CONTACT US</h1>
+              <div class="contact-container">
+                <div class="contact-form">
+                  <p class="form-description">Ready to work together? Send me a message and I'll get back to you as soon as possible.</p>
+                  <form class="contact-form-container">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="firstName">Name</label>
+                        <input type="text" id="name" name="Name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                      <i class="bi bi-send-fill"></i>
+                      Send Message
+                    </button>
+                  </form>
+                </div>1
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
